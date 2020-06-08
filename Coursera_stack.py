@@ -11,7 +11,7 @@ The subset of brackets enclosed within the confines of a matched pair of bracket
 Given n strings of brackets, determine whether each sequence of brackets is balanced. If a string is balanced, return YES. Otherwise, return NO.
 
 
-==>def is_match(left,right):
+==>def is_match(left,right)
     return left+right in ("{}","[]","()")
 for i in range(int(input())):
     l=[]
