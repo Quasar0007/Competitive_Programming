@@ -1,0 +1,41 @@
+*****An English text needs to be encrypted using the following encryption scheme.
+First, the spaces are removed from the text. Let L be the length of this text.
+Then, characters are written into a grid, whose rows and columns have the following constraints:
+
+For example, the sentence s=if man was meant to stay on the ground god would have given us roots, after removing spaces is 54 characters long.root(54) is between 7 and 8, so it is written in the form of a grid with 7 rows and 8 columns.
+
+ifmanwas  
+meanttos          
+tayonthe  
+groundgo  
+dwouldha  
+vegivenu  
+sroots
+Ensure that rows*columns>=L
+If multiple grids satisfy the above conditions, choose the one with the minimum area, i.e. rows*columns.
+The encoded message is obtained by displaying the characters in a column, inserting a space, and then displaying the next column and inserting a space, and so on. For example, the encoded message for the above rectangle is:
+
+imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
+
+
+==>from math import sqrt
+from math import ceil
+from math import floor
+import textwrap
+s=input()
+a=floor(sqrt(len(s)))
+b=ceil(sqrt(len(s)))
+l=textwrap.wrap(s,b)
+for i in range(b-len(l[-1])):
+    l[-1]+=" "
+l=list(zip(*l))
+m=[]
+for i in range(len(l)):
+    m.append(''.join(l[i]))
+for i in range(len(m)):
+    if m[i][-1]==" ":
+        m[i]=m[i][:(len(m[i])-1)]
+print(*m)
+
+
+LOGIC:-Python has got direct functions like zip and modules like textwrap to solve these functions.
