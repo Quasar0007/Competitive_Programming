@@ -1,6 +1,6 @@
-*****You’re given the pointer to the head node of a doubly linked list. Reverse the order of the nodes in the list. The head node might be NULL to indicate that the list is empty. Change the next and prev pointers of all the nodes so that the direction of the list is reversed. Return a reference to the head node of the reversed list.
+# You’re given the pointer to the head node of a doubly linked list. Reverse the order of the nodes in the list. The head node might be NULL to indicate that the list is empty. Change the next and prev pointers of all the nodes so that the direction of the list is reversed. Return a reference to the head node of the reversed list.
 
-==>#!/bin/python3
+#!/bin/python3
 
 import math
 import os
@@ -72,4 +72,4 @@ if __name__ == '__main__':
     fptr.close()
 
 
-LOGIC:-Swap the previous and next pointers of all the nodes.
+# LOGIC:-Swap the previous and next pointers of all the nodes.

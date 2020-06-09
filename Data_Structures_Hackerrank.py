@@ -1,11 +1,11 @@
-*****In this challenge, you must implement a simple text editor. Initially, your editor contains an empty string,S . You must perform Q operations of the following 4 types:
+# In this challenge, you must implement a simple text editor. Initially, your editor contains an empty string,S . You must perform Q operations of the following 4 types:
 
-1.append(W) - Append string W to the end of S.
-2.delete(k) - Delete the last k characters of S.
-3.print(k) - Print the k-th character of S.
-4.undo() - Undo the last (not previously undone) operation of type 1 or 2, reverting S to the state it was in prior to that operation.
+# 1.append(W) - Append string W to the end of S.
+# 2.delete(k) - Delete the last k characters of S.
+# 3.print(k) - Print the k-th character of S.
+# 4.undo() - Undo the last (not previously undone) operation of type 1 or 2, reverting S to the state it was in prior to that operation.
 
-==>s=""
+s=""
 k=[]
 for i in range(int(input())):
     l=list(map(str,input().split()))
@@ -22,4 +22,4 @@ for i in range(int(input())):
 
 
 
-LOGIC:-Store all the changes made in S in a list and pop out the last element when said to undo and follow the other steps as directed.
+# LOGIC:-Store all the changes made in S in a list and pop out the last element when said to undo and follow the other steps as directed.

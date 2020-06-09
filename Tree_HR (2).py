@@ -1,18 +1,18 @@
-*****You are given a pointer to the root of a binary tree. You need to print the level order traversal of this tree. In level order traversal, we visit the nodes level by level from left to right. You only have to complete the function. For example:
+# You are given a pointer to the root of a binary tree. You need to print the level order traversal of this tree. In level order traversal, we visit the nodes level by level from left to right. You only have to complete the function. For example:
 
-     1
-      \
-       2
-        \
-         5
-        /  \
-       3    6
-        \
-         4  
-For the above tree, the level order traversal is 1 -> 2 -> 5 -> 3 -> 6 -> 4.
+#      1
+#       \
+#        2
+#         \
+#          5
+#         /  \
+#        3    6
+#         \
+#          4  
+# For the above tree, the level order traversal is 1 -> 2 -> 5 -> 3 -> 6 -> 4.
 
 
-==>class Node:
+class Node:
     def __init__(self, info): 
         self.info = info  
         self.left = None  
@@ -73,4 +73,4 @@ for i in range(t):
 
 levelOrder(tree.root)
 
-LOGIC:-Keep storing the nodes from left to right in the queue and using the addresses of the nodes ;append in the queue the left and right chldren of that node and keep doing it.
+# LOGIC:-Keep storing the nodes from left to right in the queue and using the addresses of the nodes ;append in the queue the left and right chldren of that node and keep doing it.

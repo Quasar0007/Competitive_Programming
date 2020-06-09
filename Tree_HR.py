@@ -1,12 +1,10 @@
-*****Complete the getHeight or height function in the editor. It must return the height of a binary tree as an integer.
-
-getHeight or height has the following parameter(s):
-
-root: a reference to the root of a binary tree.
-Note -The Height of binary tree with single node is taken as zero.
+# Complete the getHeight or height function in the editor. It must return the height of a binary tree as an integer.
+# getHeight or height has the following parameter(s):
+# root: a reference to the root of a binary tree.
+# Note -The Height of binary tree with single node is taken as zero.
 
 
-==>class Node:
+class Node:
     def __init__(self, info): 
         self.info = info  
         self.left = None  
@@ -59,4 +57,4 @@ for i in range(t):
 print(height(tree.root))
 
 
-LOGIC:-Take the base case as the case when the node is None,return height as -1 ,so that the leaf node's height could be 1+height(node's child) i.e. 0 and apply recursion that returns height of any node as 1+maximum(height of left sub-tree of the node,height of right sub-tree of the node)
+# LOGIC:-Take the base case as the case when the node is None,return height as -1 ,so that the leaf node's height could be 1+height(node's child) i.e. 0 and apply recursion that returns height of any node as 1+maximum(height of left sub-tree of the node,height of right sub-tree of the node)

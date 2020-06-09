@@ -1,7 +1,7 @@
-*****Given a reference to the head of a doubly-linked list and an integer,data, create a new DoublyLinkedListNode object having data value data and insert it into a sorted linked list while maintaining the sort.
+# Given a reference to the head of a doubly-linked list and an integer,data, create a new DoublyLinkedListNode object having data value data and insert it into a sorted linked list while maintaining the sort.
 
 
-==>#!/bin/python3
+#!/bin/python3
 
 import math
 import os
@@ -97,4 +97,4 @@ if __name__ == '__main__':
     fptr.close()
 
 
-LOGIC:-Insert the node between the current node and next node if the data of given node is greater than the current node.
+# LOGIC:-Insert the node between the current node and next node if the data of given node is greater than the current node.

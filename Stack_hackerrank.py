@@ -1,10 +1,8 @@
-*****You have three stacks of cylinders where each cylinder has the same diameter, but they may vary in height. You can change the height of a stack by removing and discarding its topmost cylinder any number of times.
+# You have three stacks of cylinders where each cylinder has the same diameter, but they may vary in height. You can change the height of a stack by removing and discarding its topmost cylinder any number of times.
+# Find the maximum possible height of the stacks such that all of the stacks are exactly the same height. This means you must remove zero or more cylinders from the top of zero or more of the three stacks until they're all the same height, then print the height. The removals must be performed in such a way as to maximize the height.
+# Note: An empty stack is still a stack.
 
-Find the maximum possible height of the stacks such that all of the stacks are exactly the same height. This means you must remove zero or more cylinders from the top of zero or more of the three stacks until they're all the same height, then print the height. The removals must be performed in such a way as to maximize the height.
-
-Note: An empty stack is still a stack.
-
-==>l=list(map(int,input().split()))
+l=list(map(int,input().split()))
 s1=list(map(int,input().split()))
 s1.reverse()
 s2=list(map(int,input().split()))
@@ -34,4 +32,4 @@ else:
     print(m)
 
 
-LOGIC:-Look for the stack with maximum height and remove the top and continue doing it until all the 3 stacks are of the same size or one of them becomes 0.If one of them becomes 0,print 0.
+# LOGIC:-Look for the stack with maximum height and remove the top and continue doing it until all the 3 stacks are of the same size or one of them becomes 0.If one of them becomes 0,print 0.

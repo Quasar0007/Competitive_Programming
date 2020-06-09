@@ -1,12 +1,12 @@
-*****Alexa has two stacks of non-negative integers, stackA=[a0,a1,....a(n-1)]  and stackB=[b0,b1,....b(n-1)] where index 0 denotes the top of the stack. Alexa challenges Nick to play the following game:
+# Alexa has two stacks of non-negative integers, stackA=[a0,a1,....a(n-1)]  and stackB=[b0,b1,....b(n-1)] where index 0 denotes the top of the stack. Alexa challenges Nick to play the following game:
 
-In each move, Nick can remove one integer from the top of either stack A or stack B.
-Nick keeps a running sum of the integers he removes from the two stacks.
-Nick is disqualified from the game if, at any point, his running sum becomes greater than some integer x given at the beginning of the game.
-Nick's final score is the total number of integers he has removed from the two stacks.
-Given A, B, and x for g games, find the maximum possible score Nick can achieve (i.e., the maximum number of integers he can remove without being disqualified) during each game and print it on a new line.
+# In each move, Nick can remove one integer from the top of either stack A or stack B.
+# Nick keeps a running sum of the integers he removes from the two stacks.
+# Nick is disqualified from the game if, at any point, his running sum becomes greater than some integer x given at the beginning of the game.
+# Nick's final score is the total number of integers he has removed from the two stacks.
+# Given A, B, and x for g games, find the maximum possible score Nick can achieve (i.e., the maximum number of integers he can remove without being disqualified) during each game and print it on a new line.
 
-==>for i in range(int(input())):
+for i in range(int(input())):
     l=list(map(int,input().split()))
     s1=list(map(int,input().split()))
     s2=list(map(int,input().split()))
@@ -57,4 +57,4 @@ Given A, B, and x for g games, find the maximum possible score Nick can achieve 
     print(k)
 
 
-LOGIC:-We first need to check for the no.of integers counted in a particular stack to reach the sum and then take that sub-list out separately.Then,we add the next list in that sub-list with sub-list in the reverse order and start removing one element from the starting of the joint list and calculating the total no.of integers counted and take out the maximum of the two comparisons.We need to repeat the same procedure with the other given list and take the maximum integer count of all the cases formed so.
+# LOGIC:-We first need to check for the no.of integers counted in a particular stack to reach the sum and then take that sub-list out separately.Then,we add the next list in that sub-list with sub-list in the reverse order and start removing one element from the starting of the joint list and calculating the total no.of integers counted and take out the maximum of the two comparisons.We need to repeat the same procedure with the other given list and take the maximum integer count of all the cases formed so.
